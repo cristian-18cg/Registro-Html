@@ -40,3 +40,9 @@ label{
 .datos2{
   padding:5px;
 }
+input{
+  border-color:aquamarine;
+  border-radius:3px;
+  border-block-style:inherit;
+  border-style: groove;
+}
