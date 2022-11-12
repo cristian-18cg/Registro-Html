@@ -14,3 +14,17 @@ body {
     
     
    }
+fieldset{
+  border-style: double;
+}
+.formulario{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 400px;
+  background-color: beige;
+  border-radius: 10%;
+  
+}
+
+   }
