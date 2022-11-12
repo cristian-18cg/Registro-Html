@@ -13,13 +13,12 @@
 
 </head>
 
-<body style="background-color:">
+<body>
     <header>
-        <h1 style="text-align:center;">REGISTER</h1>
+        <h1 style="text-align:center; font-family: Impact; font-size:70px;">REGISTER</h1>
     </header>
-    <div class="centrar" style="padding: 80px;">
-        <form class=formulario>
-
+    <div class="centrar">
+        <form class="formulario">
             <fieldset style="padding: 20px;">
                 <form class="formulario">
                     <div class="datos1">
@@ -28,9 +27,7 @@
                             <input type="text" name="firstname" id="firstname" autofocus pattern="[A-Za-z ]{2,40}"
                                 placeholder="First Name" required><br>
                         </div>
-
-
-                        <div class="datos2" >
+                        <div class="datos2">
                             <label for="secondname">Last Name:</label><br>
                             <input type="text" name="lastname" id="lastname" pattern="[A-Za-z ]{2,40}"
                                 placeholder="Last Name" required><br>
@@ -45,37 +42,56 @@
                         </div>
                         <div class="datos2">
                             <label for="email">Enter your email:</label><br>
-                            <input type="email" id="email" name="email" required><br>
+                            <input type="email" id="email" name="email" max="70" required><br>
                         </div>
                     </div>
                     <div class="datos1">
                         <div class="datos2">
-                    <label class="mr-sm-2" for="inlineFormCustomSelect">Document type</label><br>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Choose...</option>
-                        <option value="1">Citizenship card</option>
-                        <option value="2">Foreign ID</option>
-                        <option value="3">Identity card</option>
-                    </select><br>
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Document type</label><br>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+                                <option selected>Choose...</option>
+                                <option value="1">Citizenship card</option>
+                                <option value="2">Foreign ID</option>
+                                <option value="3">Identity card</option>
+                            </select><br>
+                        </div>
+                        <div>
+                            <label for="document">Document:</label><br>
+                            <input type="text" name="Document" id="document" pattern="[0-9]{10}" min="10"
+                                placeholder="Document 10 numbers" required><br>
+                        </div>
+                    </div>
+                    <div class="datos1">
+                        <div class="datos2">
+                            <label for="DateofBirth">Date of Birth</label><br>
+                            <input type="date" id="DateofBirth" name="DateofBirth" max="2004-11-12"><br>
                         </div>
                         <div class="datos2">
-                    <label for="document">Document:</label><br>
-                    <input type="text" name="Document" id="document" pattern="[0-9]{10}" min="10"
-                        placeholder="Document 10 numbers" required><br>
+                            <label for="phone">Phone number:</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder="316-415-6708">
+                        </div>
                     </div>
+                    <div class="datos1">
+                        <div class="datos2">
+                            <label for="pwd">Password:</label><br>
+                            <input type="password" id="pwd" name="pwd"  
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+                        </div>
+                        <div class="datos2">
+                            <label for="confirmpwd">Confirm Password:</label><br>
+                            <input type="password" id="confirmpwd" name="confirmpwd"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required><br>
+                            <br>
+                        </div>
                     </div>
-                    <label for="DateofBirth">Date of Birth</label><br>
-                    <input type="date" id="DateofBirth" name="DateofBirth" max="2022-01-31"><br>
-
-                    <label for="pwd">Password:</label><br>
-                    <input type="password" id="pwd" name="pwd" pattern="[0-9a-zA-Z]{10}" min="8" required><br>
-
-                    <label for="confirmpwd">Confirm Password:</label><br>
-                    <input type="password" id="confirmpwd" name="confirmpwd" pattern="[0-9a-zA-Z]{10}" min="8"
-                        required><br> <br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                        style="width:15px ; height: 15px;">
+                    <label for="vehicle1"> I accept terms and conditions</label><br><br>
                     <div class="centrar">
-                        <input type="submit" value="Register"><br>
-
+                        <input type="submit" value="Register"
+                            style="width: 100px; background-color:rgb(24, 122, 233);color: aliceblue;"><br>
+                    </div>
                 </form>
             </fieldset>
 
